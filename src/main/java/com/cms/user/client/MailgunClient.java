@@ -16,3 +16,5 @@ public interface MailgunClient {
 	ResponseEntity<String> sendEmail(@SpringQueryMap SendMailForm form);
 
 }
+
+
