@@ -1,0 +1,49 @@
+### 회원가입 (고객)
+POST http://localhost:8082/signup/customer
+Content-Type: application/json
+
+{
+  "birth": "1993-05-25",
+  "email": "ksj2083@naver.com",
+  "name": "김세종",
+  "password": "1111",
+  "phone": "01086352083"
+}
+
+### 이메일 인증 ( 고객 )
+GET http://localhost:8082/signup/customer/verify?email=ksj2083@naver.com&code=WrQjDXvvDA
+
+### 로그인 (고객)
+POST http://localhost:8082/signIn/customer
+Content-Type: application/json
+
+{
+  "email": "ksj2083@naver.com",
+  "password": "1111"
+}
+
+### 회원 정보 조회 (고객)
+GET http://localhost:8082/customer/getInfo
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6U2lKREJEKyt5VTRFK3k4N0x1MGttcjU1ZlRneGwyZ3dZeDJ1YkpzaW8wPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2NzI2NTE0NDcsImV4cCI6MTY3MjczNzg0N30.xUjEycfGNfOeTFgCcMs-1iFh20xbx54fH9g14IOcOhg
+
+
+
+### 잔액 변경(고객)
+POST http://localhost:8082/customer/balance
+Content-Type: application/json
+X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6U2lKREJEKyt5VTRFK3k4N0x1MGttcjU1ZlRneGwyZ3dZeDJ1YkpzaW8wPSIsImp0aSI6IkNtWUR2NU1LNVlVeWlrOEtHTkR3b3c9PSIsInJvbGVzIjoiQ1VTVE9NRVIiLCJpYXQiOjE2NzI2NTE0NDcsImV4cCI6MTY3MjczNzg0N30.xUjEycfGNfOeTFgCcMs-1iFh20xbx54fH9g14IOcOhg
+
+{
+  "from": "server",
+  "message": "돈 지급",
+  "money": 10000
+}
+
+
+#########################
+
+### 회원가입 (판매자)
+
+### 로그인 (판매자)
+
