@@ -52,7 +52,7 @@ public class SignUpCustomerService {
 
         // 이미 인증된 회원일 경우
         if(customer.isVerify()){
-            throw new CustomException(ErrorCode.ALREADY_VEFIRY);
+            throw new CustomException(ErrorCode.ALREADY_VERIFY);
         }
         else if(!customer.getVerificationCode().equals(code)){
             throw new CustomException(ErrorCode.WRONG_VERIFICATION);
