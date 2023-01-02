@@ -89,7 +89,7 @@ public class SignUpApplication {
 		StringBuilder builder = new StringBuilder();
 
 		return builder.append("Hello ").append(name).append("! Please Click Link for verification. \n\n")
-			.append("http://localhost:8082/signup/"+type+"/verify/customer?email=")
+			.append("http://localhost:8082/signup/"+type+"/verify/?email=")
 			.append(email)
 			.append("&code=")
 			.append(code)

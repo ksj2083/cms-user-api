@@ -12,7 +12,7 @@ import com.cms.user.domain.SignInForm;
 import lombok.RequiredArgsConstructor;
 
 @RestController
-@RequestMapping(value = "/signIn")
+@RequestMapping(value = "/signin")
 @RequiredArgsConstructor
 public class SignInController {
 
