@@ -14,7 +14,7 @@ Content-Type: application/json
 GET http://localhost:8082/signup/customer/verify?email=ksj2083@naver.com&code=WrQjDXvvDA
 
 ### 로그인 (고객)
-POST http://localhost:8082/signIn/customer
+POST http://localhost:8082/signin/customer
 Content-Type: application/json
 
 {
@@ -43,7 +43,28 @@ X-AUTH-TOKEN: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ6U2lKREJEKyt5VTRFK3k4N0x1MGttcjU1Z
 
 #########################
 
+
 ### 회원가입 (판매자)
+POST http://localhost:8082/signup/seller
+Content-Type: application/json
+
+{
+  "birth": "1993-05-25",
+  "email": "ksj2083@naver.com",
+  "name": "김세종",
+  "password": "1",
+  "phone": "01086352083"
+}
+
+
+### 이메일 인증 ( 판매자 )
+GET http://localhost:8082/signup/seller/verify?email=ksj2083@naver.com&code=h5bGGuIzZ0
 
 ### 로그인 (판매자)
+POST http://localhost:8082/signin/seller
+Content-Type: application/json
 
+{
+  "email": "ksj2083@naver.com",
+  "password": "1"
+}
