@@ -43,6 +43,7 @@ public class Customer extends BaseEntity {
     private LocalDateTime verifyExpiredAt;
     private String verificationCode;
     private boolean verify;
+    private Integer balance; //이중화
 
     public static Customer from(SignUpForm form){
         return Customer.builder()
