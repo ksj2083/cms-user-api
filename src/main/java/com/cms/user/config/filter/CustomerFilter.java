@@ -10,7 +10,7 @@ import javax.servlet.ServletResponse;
 import javax.servlet.annotation.WebFilter;
 import javax.servlet.http.HttpServletRequest;
 
-import com.cms.user.service.CustomerService;
+import com.cms.user.service.customer.CustomerService;
 import com.domain.common.UserVo;
 import com.domain.config.JwtAuthenticationProvider;
 

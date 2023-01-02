@@ -10,7 +10,7 @@ import com.cms.user.domain.customer.CustomerDto;
 import com.cms.user.domain.model.Customer;
 import com.cms.user.exception.CustomException;
 import com.cms.user.exception.ErrorCode;
-import com.cms.user.service.CustomerService;
+import com.cms.user.service.customer.CustomerService;
 import com.domain.common.UserVo;
 import com.domain.config.JwtAuthenticationProvider;
 

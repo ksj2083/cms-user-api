@@ -10,7 +10,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import com.cms.user.domain.SignUpForm;
 import com.cms.user.domain.model.Customer;
-import com.cms.user.service.SignUpCustomerService;
+import com.cms.user.service.customer.SignUpCustomerService;
 
 @SpringBootTest
 class SignUpCustomerServiceTest {

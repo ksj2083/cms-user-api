@@ -1,4 +1,4 @@
-package com.cms.user.service;
+package com.cms.user.service.customer;
 
 import java.util.Optional;
 
